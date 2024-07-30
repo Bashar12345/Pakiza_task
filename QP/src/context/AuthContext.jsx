@@ -85,14 +85,14 @@ export const AuthProvider = ({ children }) => {
     }
   }, [logout]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const tokenExpiry = 20 * 60 * 1000; // 15 minutes
-      refreshAccessToken();
-    }, 19 * 60 * 1000); // 14 minutes
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     const tokenExpiry = 20 * 60 * 1000; // 15 minutes
+  //     refreshAccessToken();
+  //   }, 19 * 60 * 1000); // 14 minutes
 
-    return () => clearInterval(interval);
-  }, [refreshAccessToken]);
+  //   return () => clearInterval(interval);
+  // }, [refreshAccessToken]);
 
   return (
     <AuthContext.Provider value={{ isAuthenticated, login, logout, register, refreshAccessToken }}>

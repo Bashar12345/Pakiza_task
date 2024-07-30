@@ -278,7 +278,7 @@ export default function Navbar() {
               },
             }}
           >
-            <Tab icon={<HomeIcon />} component={Link} to="/home" />
+            <Tab icon={<HomeIcon />} component={Link} to="/" />
             <Tab icon={<VideoIcon />} component={Link} to="/videos" />
             <Tab
               icon={<img src={GroupIcon} />} // Ensure GroupIcon component renders correctly

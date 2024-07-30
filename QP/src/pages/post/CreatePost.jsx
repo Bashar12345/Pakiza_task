@@ -6,6 +6,7 @@ import {
   Button,
   IconButton,
 } from "@mui/material";
+import { Link } from 'react-router-dom';
 
 import { KeyboardArrowRight } from "@mui/icons-material";
 import { InsertEmoticon } from "@mui/icons-material";
@@ -317,15 +318,11 @@ const CreatePost = () => {
                   alignItems="center"
                 >
                   {index === 0 ? (
-                    <IconButton component="label">
-                      <PlusIcon />
-                      <input
-                        type="file"
-                        multiple
-                        hidden
-                        onChange={handleFileChange} />
-
-                    </IconButton>
+                 
+                   <IconButton component={Link} to="/post-stories">
+                     <PlusIcon />
+                   </IconButton>
+                   
                   ) : (
                     <Box
                       display="flex"
