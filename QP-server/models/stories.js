@@ -9,12 +9,12 @@ const storySchema = new mongoose.Schema({
   privacy: { type: String, enum: ["Public", "Private"], default: "Public" },
   likes: { type: Number, default: 0 },
   views: { type: Number, default: 0 },
-  additionalFields: { type: Schema.Types.Mixed }, // To handle additional dynamic fields
+  additionalFields: { type: mongoose.Schema.Types.Mixed }, // To handle additional dynamic fields
   // Add more fields as needed
 });
-
 
 // Create Story model
 const Story = mongoose.model("Story", storySchema);
 
 module.exports = Story;
+
