@@ -56,13 +56,13 @@ Welcome to the Quantum Possibilities Social Media Application. This project incl
 
 ### Backend Setup
 
-## https://github.com/Bashar12345/assignments/tree/master/Pakiza_task
+## https://github.com/Bashar12345/Pakiza_task.git
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Bashar12345/assignments.git
-
+   git clone https://github.com/Bashar12345/Pakiza_task.git
+   
    cd Pakiza_task/QP
 Install backend dependencies:
 
